@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Word</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<br>
+<h4 id="player1_name" style="margin-left: 20px;"></h4><span id="player1_score" style="margin-left: 20px;"></span>
+<br>
+<br>
+<h4 id="player2_name" style="margin-left: 20px;"></h4><span id="player2_score" style="margin-left: 20px;"></span>
+
+<div class="container">
+	<center>
+		<h2 class="btn btn-info" style="font-size: 32px;">Math Quiz</h2>
+			<h3 id="player_q">Question turn : </h3>
+			<h3 id="player_a">Answer Turn :  </h3>
+
+			<div id="output" class="col-lg-6"></div>
+
+			<br>
+			<br>
+
+			<label>Type Your 1<sup>st</sup> Number : <b style="color: red">Try putting a number which has 2 or more digits</b></label>
+	
+			<input  type="text" class="form-control word" placeholder="Enter the number" style="font-size: 20px; height: 40px;" id="number_1">
+	
+			<br>
+
+			<br>
+
+		<label>Type You 2<sup>nd</sup> Number : <b style="color: red">Try putting a number which has 2 or more digits</b></label>
+
+		<input  type="text" class="form-control word" placeholder="Enter the number" style="font-size: 20px; height: 40px;" id="number_2">
+
+		<br>
+
+		<button onclick="send()" class="btn btn-info" style="width: 30%;">Send</button>
+	</center>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
